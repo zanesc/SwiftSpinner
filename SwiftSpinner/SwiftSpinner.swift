@@ -169,7 +169,7 @@ open class SwiftSpinner: UIView {
         SwiftSpinner.sharedInstance.delay(delay, completion: {
             if let index = delayedTokens.index(of: token) {
                 delayedTokens.remove(at: index)
-                SwiftSpinner.show(title, animated: animated)
+                _ = SwiftSpinner.show(title, animated: animated)
             }
         })
     }
